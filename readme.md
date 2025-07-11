@@ -4,16 +4,6 @@ Simulação simples de um carrinho de compras com funcionalidades de favoritos (
 
 ---
 
-## Estrutura do Projeto
-
-/services
-├── cart.js # Funções para manipulação do carrinho
-├── item.js # Função para criação de itens
-└── wishlist.js # Funções para manipulação da lista de favoritos
-index.js # Código principal que usa os serviços
-
----
-
 ## Funcionalidades
 
 ### Carrinho (`cart.js`)
