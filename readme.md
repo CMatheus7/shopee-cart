@@ -1,4 +1,4 @@
-# Shopee Cart
+## Shopee Cart
 
 Simulação simples de um carrinho de compras com funcionalidades de favoritos (wishlist), usando JavaScript modularizado.
 
