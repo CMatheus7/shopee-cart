@@ -14,6 +14,32 @@ async function calculateTotal(userCart) {
   console.log(`🎁Total: ${result}`);
 }
 
+// -> add item favorito
+async function addToFavorites(wishlist, item) {
+  const alreadyExists = wishlist.some((fav) => fav.name === item.name);
+  if (alreadyExists) {
+    console.log(`"${item.name}" já está nos favoritos.`);
+    return;
+  }
+
+  wishlist.push(item);
+  console.log(`"${item.name}" adicionado aos favoritos.`);
+}
+
+// -> Exibir os favoritos
+
+async function displayFavorites(wishlist) {
+  console.log("\n❤️ Lista de Favoritos:");
+  if (wishlist.length === 0) {
+    console.log("Nenhum item nos favoritos.");
+    return;
+  }
+
+  wishlist.forEach((item, index) => {
+    console.log(`${index + 1}. ${item.name} - R$ ${item.price}`);
+  });
+}
+
 // -> deletar item do carrinho
 async function deleteItem(userCart, name) {
   const index = userCart.findIndex((item) => item.name === name);
