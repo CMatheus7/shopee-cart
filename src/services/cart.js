@@ -92,5 +92,7 @@ export {
   removeItem,
   displaycart,
   addToFavorites,
-  displayFavorites
+  displayFavorites,
+  removeFromFavorites
 };
+
