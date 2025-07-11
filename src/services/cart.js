@@ -90,9 +90,7 @@ export {
   calculateTotal,
   deleteItem,
   removeItem,
-  displaycart,
-  addToFavorites,
-  displayFavorites,
-  removeFromFavorites
+  displaycart
 };
+
 
