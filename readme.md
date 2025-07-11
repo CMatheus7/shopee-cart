@@ -28,10 +28,13 @@ Simulação simples de um carrinho de compras com funcionalidades de favoritos (
 #const myCart = [];
 #const myWhishList = [];
 
-#await cartService.addItem(myCart, item);
-#await wishlistService.addToFavorites(myWhishList, item, myCart);
-#await cartService.displaycart(myCart);
-#await wishlistService.displayFavorites(myWhishList);
+await cartService.addItem(myCart, item);
+---
+await wishlistService.addToFavorites(myWhishList, item, myCart);
+---
+await cartService.displaycart(myCart);
+---
+await wishlistService.displayFavorites(myWhishList);
 
 ---
 
