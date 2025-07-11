@@ -1,40 +1,58 @@
-<!--START_SECTION:header-->
-<div align="center">
-  <p align="center">
-    <h1>Recriando a lógica do carrinho de compras da Shopee</h1>
-  </p>
-</div>
-<!--END_SECTION:header-->
+# Shopee Cart
 
-<br/>
-<br/>
+Simulação simples de um carrinho de compras com funcionalidades de favoritos (wishlist), usando JavaScript modularizado.
 
-## 💻 Descrição Do Projeto
+---
 
-Vamos criar a lógica por trás do carrinho de compras da shopee, aonde o carrinho armazene itens e faça o cálculo total e de sub-itens automaticamente.
+## Estrutura do Projeto
 
-## 📚 Pré-requisitos de Habilidades e Níveis de Conhecimento
+/services
+├── cart.js # Funções para manipulação do carrinho
+├── item.js # Função para criação de itens
+└── wishlist.js # Funções para manipulação da lista de favoritos
+index.js # Código principal que usa os serviços
 
-Antes de ingressar neste conteúdo, é necessário possuir conhecimento prévio nas seguintes áreas:
+---
 
-- [habilidades ou conhecimentos prévios necessários]
+## Funcionalidades
 
-  - Javascript | Intermediário
-  - Node | Básico
-  - Modularização | Básica
+### Carrinho (`cart.js`)
+- Adicionar item ao carrinho
+- Remover uma unidade de um item
+- Deletar item completamente
+- Exibir itens do carrinho com subtotal
+- Calcular total do carrinho
 
-- [Outros pré-requisitos]
+### Favoritos (`wishlist.js`)
+- Adicionar item aos favoritos (evita duplicação e itens já no carrinho)
+- Remover item dos favoritos
+- Exibir lista de favoritos
 
-  - Lógica de Programação | Intermediário
+---
 
-## 🛠️ Habilidades e Sub-habilidades que vamos aprender neste conteúdo
+## Como usar
 
-- Modularização | Intermediária
+1. Instancie o carrinho e a lista de favoritos:
 
-## 🎯 Objetivos e Resultados Esperados
 
-Após a conclusão do curso/projeto, os estudantes estarão aptos a:
+const myCart = [];
+const myWhishList = [];
 
-- Modularizar projetos com maior propriedade
-- Como organizar pensamento lógico e funcional
-- Base para organizar projetos
+await cartService.addItem(myCart, item);
+await wishlistService.addToFavorites(myWhishList, item, myCart);
+await cartService.displaycart(myCart);
+await wishlistService.displayFavorites(myWhishList);
+
+Possíveis melhorias futuras
+Persistência em banco ou arquivo
+
+Sistema de cupons e descontos
+
+Interface gráfica (web ou mobile)
+
+Autenticação de usuários
+
+Separar carrinho e favoritos em classes para melhor OOP
+
+Autor
+Seu Nome
