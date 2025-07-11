@@ -35,17 +35,9 @@ Simulação simples de um carrinho de compras com funcionalidades de favoritos (
 
 ---
 
+- Possíveis melhorias futuras
+- Persistência em banco ou arquivo
+- Sistema de cupons e descontos
+- Interface gráfica (web ou mobile)
 
-Possíveis melhorias futuras
-Persistência em banco ou arquivo
-
-Sistema de cupons e descontos
-
-Interface gráfica (web ou mobile)
-
-Autenticação de usuários
-
-Separar carrinho e favoritos em classes para melhor OOP
-
-Autor
-Seu Nome
+Autor - Cristian Mateus
