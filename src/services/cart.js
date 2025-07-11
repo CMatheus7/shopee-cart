@@ -59,4 +59,12 @@ async function displaycart(userCart) {
   });
 }
 
-export { addItem, calculateTotal, deleteItem, removeItem, displaycart };
+export {
+  addItem,
+  calculateTotal,
+  deleteItem,
+  removeItem,
+  displaycart,
+  addToFavorites,
+  displayFavorites
+};
