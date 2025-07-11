@@ -43,6 +43,9 @@ await wishlistService.addToFavorites(myWhishList, item, myCart);
 await cartService.displaycart(myCart);
 await wishlistService.displayFavorites(myWhishList);
 
+---
+
+
 Possíveis melhorias futuras
 Persistência em banco ou arquivo
 
