@@ -1,14 +1,6 @@
-async function removeFromFavorites(wishlist, name) {
-  const index = wishlist.findIndex((item) => item.name === name);
+// wishlist.js
 
-  if (index !== -1) {
-    const removedItem = wishlist.splice(index, 1)[0];
-    console.log(`"${removedItem.name}" removido dos favoritos.`);
-  } else {
-    console.log(`"${name}" não está nos favoritos.`);
-  }
-}
-
+// ✅ Adicionar item aos favoritos
 async function addToFavorites(wishlist, item, userCart = []) {
   const inCart = userCart.some((cartItem) => cartItem.name === item.name);
   if (inCart) {
@@ -25,3 +17,30 @@ async function addToFavorites(wishlist, item, userCart = []) {
   wishlist.push(item);
   console.log(`"${item.name}" adicionado aos favoritos.`);
 }
+
+// ✅ Remover item dos favoritos
+async function removeFromFavorites(wishlist, name) {
+  const index = wishlist.findIndex((item) => item.name === name);
+
+  if (index !== -1) {
+    const removedItem = wishlist.splice(index, 1)[0];
+    console.log(`"${removedItem.name}" removido dos favoritos.`);
+  } else {
+    console.log(`"${name}" não está nos favoritos.`);
+  }
+}
+
+// ✅ Mostrar favoritos
+async function displayFavorites(wishlist) {
+  console.log("\n❤️ Lista de Favoritos:");
+  if (wishlist.length === 0) {
+    console.log("Nenhum item nos favoritos.");
+    return;
+  }
+
+  wishlist.forEach((item, index) => {
+    console.log(`${index + 1}. ${item.name} - R$ ${item.price}`);
+  });
+}
+
+export { addToFavorites, removeFromFavorites, displayFavorites };
