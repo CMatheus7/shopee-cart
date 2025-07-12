@@ -40,4 +40,5 @@ Simulação simples de um carrinho de compras com funcionalidades de favoritos (
 - Sistema de cupons e descontos
 - Interface gráfica (web ou mobile)
 
-Autor - Cristian Mateus
+## Autor 
+Cristian Mateus - DIO - Bootcamp - meutudo
