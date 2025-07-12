@@ -28,6 +28,7 @@ Simulação simples de um carrinho de compras com funcionalidades de **favoritos
 git clone https://github.com/seu-usuario/shopee-cart.git
 cd shopee-cart
 
+---
 
 ## 💡 Melhorias Futuras
 Persistência dos dados (em banco de dados ou arquivos locais)
@@ -36,6 +37,7 @@ Sistema de cupons e descontos
 
 Interface gráfica (web ou mobile)
 
+---
 ## 👨‍💻 Autor
 Cristian Mateus
 Bootcamp DIO - meutudo
