@@ -25,8 +25,14 @@ Simulação simples de um carrinho de compras com funcionalidades de **favoritos
 
 1. **Clone o repositório:**
 
-git clone https://github.com/seu-usuario/shopee-cart.git
+git clone https://github.com/CMatheus7/shopee-cart.git
 cd shopee-cart
+
+Acesse a pasta do projeto:
+cd shopee-cart
+
+Execute o projeto (requer Node.js instalado):
+node src/index.js
 
 ---
 
