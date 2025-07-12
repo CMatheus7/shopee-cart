@@ -1,46 +1,42 @@
-🛒 Shopee Cart
-Simulação simples de um carrinho de compras com funcionalidades de favoritos (wishlist), utilizando JavaScript modularizado.
+# 🛒 Shopee Cart
 
-🔧 Funcionalidades
-📦 Carrinho (cart.js)
-✅ Adicionar item ao carrinho
+Simulação simples de um carrinho de compras com funcionalidades de **favoritos (wishlist)**, utilizando **JavaScript modularizado** com **Node.js**.
 
-✅ Remover uma unidade de um item
+---
 
-✅ Excluir item completamente
+## 🔧 Funcionalidades
 
-✅ Exibir itens do carrinho com subtotal individual
+### 📦 Carrinho (`cart.js`)
+- ✅ Adicionar item ao carrinho  
+- ✅ Remover uma unidade de um item  
+- ✅ Excluir item completamente do carrinho  
+- ✅ Exibir itens com subtotais individuais  
+- ✅ Calcular o valor total do carrinho  
 
-✅ Calcular o valor total do carrinho
+### ❤️ Favoritos (`wishlist.js`)
+- ✅ Adicionar item à lista de favoritos  
+  - (evita duplicação e impede adicionar itens já no carrinho)  
+- ✅ Remover item dos favoritos  
+- ✅ Exibir todos os itens salvos na lista de favoritos  
 
-❤️ Favoritos (wishlist.js)
-✅ Adicionar item à lista de favoritos
-(impede duplicações e itens já adicionados ao carrinho)
+---
 
-✅ Remover item da lista de favoritos
+## 🚀 Como Executar
 
-✅ Exibir todos os itens salvos nos favoritos
+1. **Clone o repositório:**
 
-🚀 Como Usar
-Instancie o carrinho e a lista de favoritos:
+git clone https://github.com/seu-usuario/shopee-cart.git
+cd shopee-cart
 
-js
-Copiar
-Editar
-const myCart = [];
-const myWishList = [];
+--
 
-await cartService.addItem(myCart, item);
-await wishlistService.addToFavorites(myWishList, item, myCart);
+## 💡 Melhorias Futuras
+Persistência dos dados (em banco de dados ou arquivos locais)
 
-await cartService.displayCart(myCart);
-await wishlistService.displayFavorites(myWishList);
-💡 Possíveis Melhorias Futuras
-Persistência de dados (em banco de dados ou arquivo)
+Sistema de cupons e descontos
 
-Implementação de cupons de desconto
+Interface gráfica (web ou mobile)
 
-Criação de interface gráfica (web ou mobile)
-
-👨‍💻 Autor
-Cristian Mateus — Bootcamp DIO / meutudo
+## 👨‍💻 Autor
+Cristian Mateus
+Bootcamp DIO - meutudo
